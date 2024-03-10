@@ -1,0 +1,24 @@
+{
+  "name": "basic-banking-system",
+  "version": "1.0.0",
+  "description": "TSF GRIP Project 1",
+  "main": "server.js",
+  "scripts": {
+    "build": "tsc",
+    "start:dev": "nodemon ./src/server.ts",
+    "start": "node ./dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  }
+}
