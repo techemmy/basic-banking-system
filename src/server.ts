@@ -1,9 +1,13 @@
 import express, { Express } from "express";
+import { resolve, join } from "path";
 
 const app: Express = express();
+app.use(express.static('views'))
 
 app.get('/', (_req, res) => {
-    res.send('there:now');
+    const index = resolve(__dirname, '../views/index.html');
+
+    res.sendFile(index);
 })
 
 app.listen(3000, () => {
